@@ -1,0 +1,468 @@
+@import url(https://db.onlinewebfonts.com/c/2596224269750e00c3ad5356299a3b9f?family=Ogg+Roman);
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+/* ::-webkit-scrollbar {
+    width: 0;
+} */
+
+#header svg {
+    position: fixed;
+    top: 60px;
+    left: 56px;
+    z-index: 9;
+    max-width: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.content {
+    /* margin-left: -10px; */
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    
+}
+.content p {
+    font-family: "Ogg Roman";
+    font-size: 75px;
+    line-height: 86px;
+    letter-spacing: 0;
+    width: 100%;
+    max-width: 1030px;
+    padding: 183px 52px;
+    padding-bottom: 50px;
+}
+
+
+.home-section p {
+    font-family: "Ogg Roman";
+    font-size: 113px;
+    width: 100%;
+    max-width: 645px;
+    font-weight: 400;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding-top: 150px;
+    line-height: 86px;
+    letter-spacing: 2px;
+}
+
+
+.img-loader {
+    width: 1719px;
+    height: 1100px;
+    margin-left: -20px;
+}
+
+.img-loader img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.wow {
+    opacity: 0;
+    transition: all 0.5s 0.5s ease-out;
+}
+
+.animated {
+  opacity: 1;
+}
+
+@keyframes a {
+    0% {
+        background-position: 0 0, 0 100%, 0 0, 100% 0;
+    }
+    100% {
+        background-position: 30px 0, -30px 100%, 0 -30px, 100% 30px;
+    }
+}
+
+@keyframes b {
+    0% {
+        background-position-x: 0, 2px;
+    }
+    100% {
+        background-position-x: 17px, 19px;
+    }
+}
+
+@keyframes c {
+    0% {
+        background-position-x: 0, 0;
+    }
+    100% {
+        background-position-x: 24px, -24px;
+    }
+}
+
+.content a{
+    padding-bottom: 4px;
+    background-image: repeating-linear-gradient(-45deg, #ffb400, #ffb400 1px, transparent 0, transparent 12px), repeating-linear-gradient(45deg, #ffb400, #ffb400 1px, transparent 0, transparent 12.2px);
+    background-position: 0 103%, 2px 103%;
+    background-size: 17px 10px;
+    background-repeat: repeat-x;
+    animation: .8s infinite normal b;
+    animation-timing-function: linear;
+}
+
+
+.main-navigation {
+    position: fixed;
+    display: flex;
+    justify-items: center;
+    right: 0;
+    top: 0;
+    background-color: green;
+    height: 100%;
+}
+
+.rotate {
+    display: inline-block; 
+    transform: rotate(90deg);
+}
+
+.photos {
+    margin-left: -8px;
+    display: flex;
+    /* background-color: yellow; */
+    width: 91%;
+    height: 200%;
+    padding-bottom: 150px;
+}
+
+.photos img {
+    object-fit: cover;
+    display: flex;
+    float: right;
+    width: 90%;
+    height: 85%;
+    padding-bottom: 30px
+    
+}
+
+.photos p {
+    font-family: 'Apercu Mono Pro', sans-serif;                          
+    font-size: 14px;
+    line-height: 21px;
+    padding-left: 5px;
+}
+            
+.footer {
+    font-family: ogg, sans-serif;
+    /* background-color: red; */
+    height: 300px;
+    width: 88%;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around
+}
+
+.footer p {
+    font-family: "Ogg Roman";
+    font-size: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+
+.events {
+    font-family: 'Apercu Mono Pro', sans-serif; 
+    /* background-color: blue; */
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;  
+    height: 250px;
+    width: 88%;
+    margin-left: 40px;
+    background-image: linear-gradient(90deg, #000 50%, transparent 0), linear-gradient(90deg, #000 50%, transparent 0), linear-gradient(90deg, #000 50%, transparent 0), linear-gradient(90deg, #000 50%, transparent 0);
+    background-position: 0 0, 0 100%, left 14px, 0 calc(100% - 14px);
+    background-repeat: repeat-x, repeat-x, repeat-x, repeat-x;
+    background-size: 24px 1px, 24px 1px, 24px 1px, 24px 1px;
+    animation: .8s infinite normal c;
+    animation-timing-function: linear;
+}
+
+.events-row {
+    display: flex;
+    justify-content: space-around; 
+    align-content: center; 
+    /* background-color: red; */
+    width: 1550px ;
+    height: 80px ;
+    cursor: pointer;
+}
+
+
+
+.events-row a:hover {
+    opacity: 0.6;
+    transition: 0.6s;
+    color:gray;
+}
+
+.events p {
+    text-align: center;
+}
+
+.footeris .seeall {
+    line-height: 1.325;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Apercu Mono Pro', sans-serif; 
+    font-size: 16px;
+    text-align: center;
+    padding: 20px;
+    width: 180px;
+    position: absolute;
+    bottom: -3170px;
+    left: 46%;
+    transform: translateX(-50%);
+    background: #fff;
+    border: 1px solid #000;
+    transition: background .6s cubic-bezier(.23,1,.32,1),color .6s cubic-bezier(.23,1,.32,1);
+}
+
+.footeris .seeall:hover {
+    color: white;
+    background: black;
+}
+
+.home-address {
+    height: 320px;
+    width: 1610px;
+    margin-left: -10px;
+    margin-top: 150px;
+    /* margin-left: -19px; */
+    /* background-color: red; */
+    padding: 0 60px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between; 
+    padding: 0 50px 0px;
+    
+}
+
+.home-address-text {
+    width: 725px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(90deg, #000 50%, transparent 0), linear-gradient(90deg, #000 50%, transparent 0), linear-gradient(180deg, #000 50%, transparent 0), linear-gradient(180deg, #000 50%, transparent 0);
+    background-position: 0 0, 0 100%, 0 0, 100% 0;
+    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+    background-size: 30px 1px, 30px 1px, 1px 30px, 1px 30px;
+    animation: .4s infinite normal a;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+}
+
+.home-address-text:hover {
+    animation-play-state:running;
+}
+
+.home-address-text p {
+    font-family: "Ogg Roman";
+    font-size: 60px;
+    display: flex;
+    text-align: center;
+    max-width: 385px;
+    margin: 0 auto;
+    line-height: 80px;    
+}
+
+.home-address-img {
+    /* background-color: green; */
+    width: 725px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    top: 0;
+    background-image: linear-gradient(90deg, #000 50%, transparent 0), linear-gradient(90deg, #000 50%, transparent 0), linear-gradient(180deg, #000 50%, transparent 0), linear-gradient(180deg, #000 50%, transparent 0);
+    background-position: 0 0, 0 100%, 0 0, 100% 0;
+    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+    background-size: 30px 1px, 30px 1px, 1px 30px, 1px 30px;
+    animation: .4s infinite normal a;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+}
+
+.home-address-img:hover {
+    animation-play-state:running;
+}
+
+.home-address-img img {
+    height: 99%;
+    width: 99%;
+    object-fit: cover;
+}
+
+.down {
+    /* background-color: red; */
+    padding: 60px 60px 30px;
+    height: 690px;
+    width: 81%;
+    margin-left:40px;
+}
+
+.down-text {
+    /* background-color: green; */
+    height: 270px;
+    width: 1610px;
+    background-image: repeating-linear-gradient(-74deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 1px, transparent 0, transparent 4px), repeating-linear-gradient(-74deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 1px, transparent 0, transparent 4px);
+    /* background-size: 100% 12px, 100% 12px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 55px;
+    font-family: "Ogg Roman";
+    margin-left: -60px;
+}
+
+.whites {
+    background-color: white;
+    height: 240px;
+    width: 120%;
+}
+
+.down-text a {
+    font-size: 16px;
+    padding: 15px;
+    border: 1px solid #000;
+    width: 100%;
+    max-width: 180px;
+    display: inline-block;
+    margin: 0 auto;
+    transition: background .6s cubic-bezier(.23,1,.32,1), color .6s cubic-bezier(.23,1,.32,1);
+    cursor: pointer;
+    font-family: 'Apercu Mono Pro', sans-serif; 
+}
+
+.whites {
+    display: flex;
+    flex-direction: column;
+}
+
+.down-text a:hover {
+    color: white;
+    background: black;
+}
+
+.whites a {
+    margin-top: -2%;
+}
+
+.contacts {
+    /* background-color: yellow; */
+    height: 200px;
+    width: 1610px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: -60px;
+}
+
+.contacts-text {
+    font-family: 'Apercu Mono Pro', sans-serif; 
+    font-size: 14px;
+    /* background-color: green; */
+    height: 200px;
+    width: 490px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(90deg, #000 50%, transparent 0), linear-gradient(90deg, #000 50%, transparent 0), linear-gradient(180deg, #000 50%, transparent 0), linear-gradient(180deg, #000 50%, transparent 0);
+    background-position: 0 0, 0 100%, 0 0, 100% 0;
+    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+    background-size: 30px 1px, 30px 1px, 1px 30px, 1px 30px;
+    animation: .4s infinite normal a;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+}
+
+
+.contacts-text:hover {
+    animation-play-state: running;
+}
+
+.email {
+    /* background-color: purple; */
+    height: 120px;
+    width: 1610px;
+    margin-top: 70px;
+    margin-left: -60px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    background-image: linear-gradient(90deg, #000 50%, transparent 0), linear-gradient(90deg, #000 50%, transparent 0), linear-gradient(180deg, #000 50%, transparent 0), linear-gradient(180deg, #000 50%, transparent 0);
+    background-position: 0 0, 0 100%, 0 0, 100% 0;
+    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+    background-size: 30px 1px, 30px 1px, 1px 30px, 1px 30px;
+    animation: .4s infinite normal a;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+}
+
+.email p {
+    font-family: 'Apercu Mono Pro', sans-serif; 
+    font-size: 22px;
+    margin-left: 60px;
+    display: block;
+    width: 100%;
+    max-width: 260px;
+}
+
+.email input{
+    font-family: 'Apercu Mono Pro', sans-serif; 
+    font-size: 14px;
+    width: 100%;
+    max-width: 680px;
+    position: relative;
+    width: 100%;
+    border: 1px solid #000;
+    padding: 20px 30px;
+    background: transparent;
+    margin-left: 480px;
+}
+
+.email:hover {
+    animation-play-state: running;
+}
+
+.copyright {
+    /* background-color: yellow; */
+    height: 40px;
+    width: 700px;
+    margin-left: 40px;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+}
+
+.copyright a {
+    cursor: pointer;
+    text-decoration: underline;
+
+}
+
+.copyright p {
+    font-weight: 400;
+    font-family: 'Apercu Mono Pro', sans-serif; 
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.ending {
+    height: 90px;
+}
